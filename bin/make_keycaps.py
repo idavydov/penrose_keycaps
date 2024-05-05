@@ -29,6 +29,12 @@ SYMBOLS = [
     ("E", "E", "Ubuntu"),
     ("F", "F", "Ubuntu"),
     ("sc", ";:", "Ubuntu"),
+    ("inf", "∞", "Ubuntu"),
+    ("sum", "∑", "Ubuntu"),
+    ("angle", "∢", "Ubuntu"),
+    ("root", "√", "Ubuntu"),
+    ("plus", "+", "Ubuntu"),
+    ("subset", "⊆", "Ubuntu"),
 ]
 
 
