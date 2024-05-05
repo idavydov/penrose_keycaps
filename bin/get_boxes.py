@@ -3,8 +3,10 @@ import random
 import copy
 import io
 import math
+import os
 
 from pprint import pprint
+from glob import glob
 import xml.etree.ElementTree as ET
 
 import numpy as np
@@ -209,8 +211,12 @@ def get_square(paths, attributes, svg_attributes, outputfn):
 def filled(bitmap):
     return np.sum(bitmap >= 0.5) / bitmap.size
 
+def cleanup():
+    for f in glob("out/*.svg") + glob("out/preview/*.png"):
+        os.remove(f)
 
 if __name__ == "__main__":
+    cleanup()
     random.seed(123)
     w = 1024
     letters = {
